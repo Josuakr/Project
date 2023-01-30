@@ -1,0 +1,44 @@
+html {
+	height: 100%;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	overflow: hidden;
+}
+
+.wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	place-items: center;
+}
+
+#title {
+	font-size: 48px;
+}
+
+#title,
+#desc {
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.particletext {
+	position: relative;
+	color: transparent;
+	font-weight: 800;
+	background-color: #1e80db !important;
+	background-position: 50% 50%;
+	background: url(https://i.imgur.com/OLQtRxV.png) repeat-y;
+	-webkit-background-clip: text;
+	animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+	0% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 60% 100%;
+	}
+}
