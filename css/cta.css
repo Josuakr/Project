@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
   overflow: hidden;
 }
 
@@ -20,18 +20,77 @@ html {
 #title,
 #desc {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .particletext {
   position: relative;
   color: transparent;
   font-weight: 800;
-  background-color: #1e80db !important;
+  background-color: #c8e8ed !important;
   background-position: 50% 50%;
   background: url(https://i.imgur.com/OLQtRxV.png) repeat-y;
   -webkit-background-clip: text;
   animation: slide 2s linear infinite;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 400;
+  color: #212112;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: all 200ms linear;
+}
+
+.nav-link{
+	color: #c8e8ed !important;
+	font-weight: bold;
+  transition: all 200ms linear;
+  margin-right: -12px;
+}
+.nav-item:hover .nav-link{
+	color: #c8e8ed !important;
+  font-weight: 600;
+  transition: all 200ms linear;
+}
+.nav-item.active .nav-link{
+	color: #c8e8ed !important;
+  font-weight: 600;
+  transition: all 200ms linear;
+}
+.nav-link {
+	position: relative;
+	padding: 5px 0 !important;
+	display: inline-block;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	content: '';
+	background-color: #c8e8ed;
+	opacity: 0;
+  transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+  transition: all 200ms linear;
 }
 
 @keyframes slide {
