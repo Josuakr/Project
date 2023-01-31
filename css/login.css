@@ -47,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #192033;
+    color: #212121;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -99,7 +99,7 @@ label input {
 
 ::placeholder {
     font-size: 18px;
-    color: #192033 !important;
+    color: #8986A2 !important;
     font-weight: 600;
 }
 

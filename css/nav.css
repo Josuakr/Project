@@ -22,11 +22,11 @@ body{
 }
 ::selection {
 	color: #fff;
-	background-color: #8167a9;
+	background-color: #c8e8ed;
 }
 ::-moz-selection {
 	color: #fff;
-	background-color: #8167a9;
+	background-color: #c8e8ed;
 }
 
 
@@ -401,7 +401,7 @@ body.hero-anime #switch{
 
 body.dark{
 	color: #fff;
-	background-color: #1f2029;
+	background-color: #212112;
 }
 body.dark .navbar-brand img{
   filter: brightness(100%);

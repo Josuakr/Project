@@ -82,8 +82,8 @@ p.slide-up {
 .cta {
   display: flex;
   align-items: center;
-  background-color: black !important;
-  color: white;
+  background-color: #212112 !important;
+  color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border: 0;
@@ -93,7 +93,7 @@ p.slide-up {
 }
 
 .cta:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .cta svg {
