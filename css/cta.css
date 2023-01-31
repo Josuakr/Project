@@ -7,7 +7,7 @@ html {
 .wrapper {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -50%);
   display: grid;
   place-items: center;
