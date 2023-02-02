@@ -12,6 +12,7 @@ body {
     background: transparent linear-gradient(127deg, #c8e8ed 0%, #c8e8ed 100%) 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
+    min-height: 848px;
 }
 
 .sign-in {
@@ -49,7 +50,7 @@ body {
     text-decoration: none;
     color: #212121;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .btn-sign-in-social img {
@@ -60,7 +61,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 55px 0;
+    margin: 16px 0;
 }
 
 .divider-line {
@@ -83,8 +84,45 @@ label span {
     display: block;
     margin-bottom: 5px;
 }
+.mail {
+    margin-top: 15px;
+}
+.agree {
+    color: #212112;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+}
+.msg {
+    color: #212112;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-top: -10px;
+}
+.gender {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 0;
+    font-family: 'Poppins', sans-serif;
+    min-width: 103px;
+}
+.adult {
+    color: #ad341c;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
 
-label input {
+/* label has to be left of radio,
+all radios should span div.sign-in-form left to right */
+
+
+label input[type="text"],[type="password"],[type="tel"],[type="date"] {
     color: #212112;
     display: block;
     width: 100%;
@@ -95,6 +133,49 @@ label input {
     padding: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+}
+label input[type="email"] {
+    color: #212112;
+    display: block;
+    width: 100%;
+    border: 2px solid #DCDBE5;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 64px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+label input[type="radio"] {
+    color: #212112;
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #DCDBE5;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 20px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+label input[type="checkbox"] {
+    color: #212112;
+    display: inline-flex;
+    width: 100%;
+    border: 2px solid #DCDBE5;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 35px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: -100px;
+    margin-left: 215px;
+}
+
+label input[type="checkbox"] {
+    display: inline-flex
 }
 
 ::placeholder {
@@ -115,11 +196,31 @@ label input {
     padding: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 0px;
+}
+.btn-sign-in-main-two {
+    background: transparent linear-gradient(101deg, #fff 0%, #fff 100%) 0% 0% no-repeat padding-box;
+    color: #212112 !important;
+    display: block;
+    width: 100%;
+    border: 2px solid #DCDBE5;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 64px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .btn-sign-in-main:hover {
-    background: transparent linear-gradient(101deg, #c8e8ed 0%, #85d2de 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(101deg, #c8e8ed 0%, #c8e8ed 100%) 0% 0% no-repeat padding-box;
+    border: 0 !important;
+    color: #fff !important;
+
+}
+.btn-sign-in-main-two:hover {
+    background: transparent linear-gradient(101deg, #c8e8ed 0%, #c8e8ed 100%) 0% 0% no-repeat padding-box;
     border: 0 !important;
     color: #fff !important;
 

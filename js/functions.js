@@ -29,3 +29,16 @@ function includeHTML() {
 function transition() {
     return
 }
+
+function getAge() {
+    var Bdate = document.getElementById('bday').value;
+    var Bday = +new Date(Bdate);
+    const mt = ~~((Date.now() - Bday) / (31557600000)) + " years old";
+    var theBday = document.getElementById('resultBday');
+    var fail = "Must be at least 18 to sign up.";
+    if (mt < "18") {
+        theBday.innerHTML = fail;
+    } else {
+        theBday.innerHTML = ""
+    }
+}
