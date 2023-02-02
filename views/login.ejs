@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
+    <link href= "/public/assets/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="sign-in">
+        <div class="sign-in-heading">
+            <h3>Sign in</h3>
+        </div>
+        <div>
+            <% if (messages.error) { %>
+            <%= messages.error %>
+            <% } %>
+        </div>
+        <div class="sign-in-form">
+            <!-- <a href="#" class="btn-sign-in-social"><img src="https://m-azam.me/Hosted-assets/sign-in/apple-icon.svg"
+                    alt="">Continue with Apple</a>
+            <a href="#" class="btn-sign-in-social"><img src="https://m-azam.me/Hosted-assets/sign-in/google-icon.svg"
+                    alt="">Continue with Google</a> -->
+            <form action="../public/index.html">
+                <label for="">
+                    <span>E-Mail</span>
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="">
+                    <span>Password</span>
+                    <input type="password" id="password" name="password" required>
+                </label>
+                <button type="submit" class="btn-sign-in-main">Log in</button>
+            </form>
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-text">OR</div>
+                <div class="divider-line"></div>
+            </div>
+            <form action="/register">
+                <button class="btn-sign-in-main-two">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- partial -->
+
+</body>
+
+</html>
+
+<!--
+            <form action="/login" method="POST">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <a href="/register">Register</a> -->
