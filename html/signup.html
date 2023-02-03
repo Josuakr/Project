@@ -25,7 +25,7 @@
             <h3>Sign up</h3>
         </div>
         <div class="sign-in-form">
-            <form action="../php/connect.php" method="post">
+            <form action="../../../Applications/XAMPP/xamppfiles/htdocs/php/connect.php" method="post">
                 <label for="first">
                     <span>First Name *</span>
                     <input type="text" name="first" id="first" placeholder="First Name(s)" required>
@@ -72,18 +72,18 @@
                     <input type="checkbox" name="tos" id="tos">
                     <span>I have read and I accept the <a type="checkbox" href="../html/tos.html">Terms of Service</a></span>
                 </label> -->
-                <label for="tos">
+                <div class="space" for="tos">
                     <span class="agree" onclick="alert('terms of service:')">
-                        I agree to the Terms of Service *
+                        <input type="checkbox" name="tos" id="tos" value="tos" required=checked>
+                        <label class="info" for="tos">I agree to the Terms of Service *</label>
                     </span>
-                    <input type="checkbox" name="tos" id="tos" value="tos" required=checked>
-                </label>
-                <label for="msg">
+                </div>
+                <div class="space" for="msg">
                     <span class="msg">
-                        I want to get messages
+                        <input type="checkbox" name="msg" id="msg" value="msg" checked>
+                        <label class="info" for="msg">I want to get messages</label>
                     </span>
-                    <input type="checkbox" name="msg" id="msg" value="msg" checked>
-                </label>
+                </div>
                 <button type="submit" class="btn-sign-in-main">Sign Up</button>
                 <label for="req">
                     <span class="agree">* required</span>

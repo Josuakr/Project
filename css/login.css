@@ -15,6 +15,11 @@ body {
     min-height: 848px;
 }
 
+.space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .sign-in {
     margin: 60px;
     max-width: 1000px;
@@ -99,7 +104,8 @@ label span {
     font-size: 14px;
     font-weight: 700;
     display: block;
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    margin-bottom: 20px;
 }
 .gender {
     display: inline-block;
@@ -122,8 +128,26 @@ label span {
 all radios should span div.sign-in-form left to right */
 
 
-label input[type="text"],[type="password"],[type="tel"],[type="date"] {
+label input[type="text"],[type="password"],[type="tel"] {
     color: #212112;
+    display: block;
+    width: 100%;
+    border: 2px solid #DCDBE5;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 64px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/* label input:valid {
+    border: 2px solid #7fff68;
+}
+label input:invalid {
+    border: 2px solid #ff6868;
+} */
+label input[type="date"] {
+    color: #c8e8ed;
     display: block;
     width: 100%;
     border: 2px solid #DCDBE5;
@@ -145,6 +169,7 @@ label input[type="email"] {
     padding: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    /* background-color: #c8e8ed; */
 }
 label input[type="radio"] {
     color: #212112;
@@ -161,22 +186,34 @@ label input[type="radio"] {
 }
 label input[type="checkbox"] {
     color: #212112;
-    display: inline-flex;
-    width: 100%;
+    display: left;
+    /* width: 100%; */
     border: 2px solid #DCDBE5;
     border-radius: 5px;
     font-size: 18px;
-    height: 35px;
+    /* height: 35px; */
     padding: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: -100px;
-    margin-left: 215px;
+    margin-top: 20px;
+    /* margin-top: -100px;
+    margin-left: 215px; */
+}
+label input:hover {
+    border: 3px solid #c8e8ed;
+    color: #c8e8ed;
 }
 
 label input[type="checkbox"] {
     display: inline-flex
 }
+
+/* label .info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: left;
+    font-size: 18;
+} */
 
 ::placeholder {
     font-size: 18px;
