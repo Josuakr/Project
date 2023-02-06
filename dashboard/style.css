@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+  margin-top: 78px;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  color:#212112;
+  background-color: #c8e8ed;
+}
+
+.bg-card{
+  background-color:#fff;
+}
+.bg-sidebar-card-top{
+  background-color: #353535;
+}
+.sidebar-separator-top{
+  border-bottom: 1px solid #fff;
+}
+.sidebar-separator-bottom{
+  border-top: 1px solid #fff;
+}
+.text-premium-yellow{
+  color: #f7b91c;
+}
+.text-admin-red{
+  color: #db4c4c
+}
+.icon-background{
+  background: #c8e8ed;
+}
+
+.tooltip-head{
+background: #fff;
+border: #212112 solid .5px;
+}
+.tooltip-body{
+  background:#c8e8ed ;
+}
+
+.search-icon{
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.card-stack-border{
+  border-bottom: 2px solid #696969;
+}
+.bg-details{
+  border: 2px solid #212112;
+  background-color: #fff;
+}
+
+.bg-details:hover {
+  border: none;
+  background-color: #c8e8ed;
+}
+
+.add-component-head{
+  background-color: #181818;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+}
+
+.sidebar-item-selected{
+  color: #c8e8ed;
+  border-right: 2px solid #c8e8ed;
+}
+.sidebar-item{
+  border-right: 2px solid transparent;
+}
+.sidebar-item:hover {
+ color:#c8e8ed;
+}
