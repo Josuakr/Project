@@ -42,7 +42,9 @@ body{
   margin-top: 40px;
 	/* transform: translateY(-50%); */
 	z-index: 20;
+  background-color: #c8e8ed;
 }
+
 
 /* .wrapper {
   width: 100%;
@@ -62,6 +64,11 @@ body{
   height: 93.6vh;
 	background-color: #c8e8ed;
   max-height: auto;
+}
+@media (max-width: 639px) {
+  .wrapper {
+    margin-top: 100px;
+  }
 }
 
 .slide-up {

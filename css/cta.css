@@ -1,7 +1,15 @@
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #000000 0%, #000000 100%);
-  overflow: hidden;
+  overflow: hidden;  
+  background-color: #c8e8ed;
+  color: #c8e8ed;
+}
+
+body {
+  background-color: #c8e8ed;
+  color: #c8e8ed;
+  background: #c8e8ed;
 }
 
 .wrapper {
