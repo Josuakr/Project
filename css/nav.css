@@ -16,7 +16,8 @@ body {
 	background-position: center;
 	background-repeat: repeat;
 	background-size: 7%;
-	background-color: #c8e8ed;
+	/* background-color: #c8e8ed; */
+	background-color: #fff;
 	overflow-x: hidden;
 	transition: all 200ms linear;
 }
@@ -74,7 +75,7 @@ body {
 	z-index: 1000;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	max-height: 78px;
+	/* max-height: 78px; */
 	/* align-items: center; */
 }
 
