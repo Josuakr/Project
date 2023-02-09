@@ -74,14 +74,17 @@ body {
 	z-index: 1000;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
+	max-height: 78px;
+	/* align-items: center; */
 }
 
 .navbar {
 	padding: 0;
+	/* align-items: center; */
 }
 
 .navbar-brand img {
-	height: 28px;
+	height: 24px;
 	width: auto;
 	display: block;
 	filter: brightness(10%);
@@ -423,7 +426,7 @@ body.hero-anime #switch {
 
 .switched {
 	border-color: #000 !important;
-	background: #8167a9 !important;
+	background: #212112 !important;
 }
 
 .switched #circle {
